@@ -90,7 +90,7 @@ table tr:first-child th {
 
 @media screen and (width < 500px) {
     table,table th {
-        display: hidden;
+        display: none;
     }
 }
 
