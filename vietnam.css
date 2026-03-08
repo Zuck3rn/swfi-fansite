@@ -88,6 +88,12 @@ table tr:first-child th {
     grid-area: sofire;
 }
 
+@media screen and (width < 500px) {
+    table {
+        font-size:xx-small
+    }
+}
+
 @media screen and (width < 960px) {
     .body {
         grid-template-columns: 1fr;
