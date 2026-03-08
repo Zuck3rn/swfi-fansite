@@ -95,6 +95,9 @@ table tr:first-child th {
 }
 
 @media screen and (width < 960px) {
+    table,table th {
+        font-size: xx-small;
+    }
     .body {
         grid-template-columns: 1fr;
         grid-template-areas:
