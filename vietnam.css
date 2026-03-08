@@ -1,0 +1,102 @@
+.banner {
+    object-position: 0% 51%;
+}
+
+.body {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "show fed"
+    "show salad"
+    "show oops"
+    "show hanoi"
+    "show sswarriorz"
+    "show sofire";
+}
+
+table,table th {
+    font-size: small;
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+table {
+    border-radius: 10px;
+    background-color: darkgray;
+    padding: 5px;
+}
+
+table tr:first-child th {
+    font-style: italic;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.red {
+    background-color: rgb(224, 148, 148);
+}
+
+.green {
+    background-color: rgb(137, 251, 137);
+}
+
+.first {
+    background-color: rgb(250, 237, 164);
+}
+
+.second {
+    background-color: silver;
+}
+
+.third {
+    background-color: rgb(177, 121, 80);
+}
+
+#vnshow {
+    grid-area: show;
+}
+
+#vnshow ~ section img{
+    float:right;
+    height: 200px;
+}
+
+#fed {
+    grid-area: fed;
+}
+
+#salad {
+    grid-area: salad;
+}
+
+#oops {
+    grid-area: oops;
+}
+
+#hanoi {
+    grid-area: hanoi;
+}
+
+#sswarriorz {
+    grid-area: sswarriorz;
+}
+
+#sofire {
+    grid-area: sofire;
+}
+
+@media screen and (width < 960px) {
+    .body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "show"
+        "fed"
+        "salad"
+        "oops"
+        "hanoi"
+        "sswarriorz"
+        "sofire";
+    }
+}

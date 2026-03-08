@@ -1,0 +1,97 @@
+.banner {
+    object-position: 0% 46%;
+}
+
+.body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "show show show"
+    "ojogang agsquad motiv"
+    "bumsup rhtokyo royal";
+}
+
+#show {
+    grid-area: show;
+}
+
+#ojogang {
+    grid-area: ojogang;
+}
+
+#agsquad {
+    grid-area: agsquad;
+}
+
+#motiv {
+    grid-area: motiv;
+}
+
+#bumsup {
+    grid-area: bumsup;
+}
+
+#rhtokyo {
+    grid-area: rhtokyo;
+}
+
+#royl {
+    grid-area: royal;
+}
+
+em {
+    font-style: normal;
+}
+
+em.ojo {
+    color: rgb(0, 185, 0);
+}
+
+em.ag {
+    color: rgb(190, 0, 237);
+}
+
+em.motiv {
+    color: orange;
+}
+
+em.bumsup {
+    color: rgb(0, 0, 224);
+}
+
+em.rh {
+    color:rgb(194, 165, 0);
+}
+
+em.royal {
+    color: rgb(255, 37, 149);
+}
+
+.hover:hover {
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+@media screen and (width <= 600px) {
+    .body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "show"
+        "ojogang"
+        "agsquad"
+        "motiv"
+        "bumsup"
+        "rhtokyo"
+        "royal";
+    }
+}
+
+@media screen and (600px < width < 960px) {
+    .body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "show show "
+        "ojogang agsquad"
+        "motiv bumsup"
+        "rhtokyo royal";
+    }
+}

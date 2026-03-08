@@ -1,0 +1,41 @@
+.body {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "show reason"
+    "faves faves"
+    ;
+}
+
+.banner {
+    object-position: 0% 55%; 
+}
+
+#show {
+    grid-area: show;
+}
+
+#faves {
+    grid-area: faves;
+}
+
+#faves img {
+    box-shadow: 5px 5px rgba(0,0,0,.1);
+}
+
+#reason {
+    grid-area: reason;
+}
+
+@media screen and (width < 940px){
+    .body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "show"
+        "reason"
+        "faves"
+        ;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
