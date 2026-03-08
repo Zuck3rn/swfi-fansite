@@ -24,6 +24,7 @@ table {
     border-radius: 10px;
     background-color: darkgray;
     padding: 5px;
+    max-width: 100%;
 }
 
 table tr:first-child th {
